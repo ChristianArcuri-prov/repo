@@ -1,0 +1,105 @@
+﻿@model SitkonWeb.Models.CustomerModel
+@{
+    ViewBag.Title = "Score";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Situación del cliente</h2>
+
+<form>
+    <div class="form-group row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">CUIT/ DNI</label>
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.Cuit, new { @class = "form-control", @readonly = "readonly" })
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Score</label>
+        <div class="col-sm-10">            
+            @Html.TextBoxFor(c => c.Score, new { @class = "form-control", @readonly = "readonly", @Value = Model.Score })
+        </div>
+    </div>
+    @if (Model.TipoCliente == 1)
+    {
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Límite Mínimo</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(m => m.LimiteMIN, new { @class = "form-control", @readonly = "readonly" })
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Límite Máximo</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(m => m.LimiteMAX, new { @class = "form-control", @readonly = "readonly" })
+            </div>
+        </div>
+        <hr />
+        <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Nombre</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control", @readonly = "readonly" })
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Apellido</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(m => m.Apellido, new { @class = "form-control", @readonly = "readonly" })
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Sexo</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(m => m.Sexo, new { @class = "form-control", @readonly = "readonly" })
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Edad</label>
+            <div class="col-sm-10">                
+                @Html.TextBoxFor(c => c.Edad, new { @class = "form-control", @readonly = "readonly", @Value = Model.Edad })                
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Razon Social</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(m => m.RazonSocial, new { @class = "form-control", @readonly = "readonly" })
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Situacion</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(c => c.Situacion, new { @class = "form-control", @readonly = "readonly", @Value = Model.Situacion })
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Monto de Deuda</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(c => c.MontoDeuda, new { @class = "form-control", @readonly = "readonly", @Value = Model.MontoDeuda })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Cheques Rechazados</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(c => c.ChequesRechazados, new { @class = "form-control", @readonly = "readonly", @Value = Model.ChequesRechazados })
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Monto Cheques Rechazados</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(m => m.MontoChequesRechazados, new { @class = "form-control", @readonly = "readonly" })
+            </div>
+        </div>
+        
+    }
+
+    
+    <br />
+    <input type="button" class="btn btn-danger" value="Volver" onclick="location.href='@Url.Action("Index", "Home")'" />
+    @*<button type="submit" class="btn btn-primary">Confirmar</button>*@
+</form>
+
+

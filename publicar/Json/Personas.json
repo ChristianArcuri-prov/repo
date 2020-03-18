@@ -1,0 +1,54 @@
+﻿{
+  "personas": [
+    {
+      "nombre": "Christian",
+      "apellido": "Arcuri",
+      "sexo": "Masculino",
+      "edad": "30",
+      "cuit": "34158321",
+      "limitemin": "0",
+      "limitemax": "5000",
+      "score": "10"
+    },
+    {
+      "nombre": "Facundo",
+      "apellido": "Caden",
+      "sexo": "Masculino",
+      "edad": "31",
+      "cuit": "32589632",
+      "limitemin": "50",
+      "limitemax": "68000",
+      "score": "60"
+    },
+    {
+      "nombre": "Sebastian",
+      "apellido": "Del Hoyo",
+      "sexo": "Masculino",
+      "edad": "33",
+      "cuit": "30236985",
+      "limitemin": "0",
+      "limitemax": "500",
+      "score": "15"
+    },
+    {
+      "nombre": "Alejandra",
+      "apellido": "Sanchez",
+      "sexo": "Femenino",
+      "edad": "40",
+      "cuit": "26821876",
+      "limitemin": "1000",
+      "limitemax": "88000",
+      "score": "90"
+    },
+    {
+      "nombre": "Paula",
+      "apellido": "Bustamante",
+      "sexo": "Otro",
+      "edad": "38",
+      "cuit": "20692354",
+      "limitemin": "1000",
+      "limitemax": "5000",
+      "score": "33"
+    }
+  ]
+}  

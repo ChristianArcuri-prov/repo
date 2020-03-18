@@ -1,0 +1,49 @@
+﻿{
+  "empresas": [
+    {
+      "razon_social": "RTI LATINA SRL",
+      "cuit": "30710050984",
+      "situacion": "1",
+      "monto_deuda": "201",
+      "cheques_rechazados": "0",
+      "monto_cheques_rechazados": "0",
+      "score": "20"
+    },
+    {
+      "razon_social": "RECURSOS Y CAPACITACION SRL",
+      "cuit": "30696038887",
+      "situacion": "0",
+      "monto_deuda": "0",
+      "cheques_rechazados": "0",
+      "monto_cheques_rechazados": "0",
+      "score": "90"
+    },
+    {
+      "razon_social": "LEONDATE S.R.L.",
+      "cuit": "30712483888",
+      "situacion": "1",
+      "monto_deuda": "1528",
+      "cheques_rechazados": "3",
+      "monto_cheques_rechazados": "110.793,09",
+      "score": "10"
+    },
+    {
+      "razon_social": "TECHBRAIN SRL",
+      "cuit": "30716561751",
+      "situacion": "0",
+      "monto_deuda": "0",
+      "cheques_rechazados": "0",
+      "monto_cheques_rechazados": "0",
+      "score": "90"
+    },
+    {
+      "razon_social": "GRUPO H.H.COMIDAS S.R.L.",
+      "cuit": "33714317909",
+      "situacion": "0",
+      "monto_deuda": "0",
+      "cheques_rechazados": "2",
+      "monto_cheques_rechazados": "87.403,11",
+      "score": "75"
+    }
+  ]
+}  
