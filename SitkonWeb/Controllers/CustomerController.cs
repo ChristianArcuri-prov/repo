@@ -38,24 +38,7 @@ namespace SitkonWeb.Controllers
                 return NotFound();
             }
             
-            CustomerModel cusModel = new CustomerModel();
-            
-            
-
-            
-
-            //Recorriendo todo el archivo
-            //if (json != null)
-            //{                
-            //    JArray personasArrary = (JArray)json["personas"];
-            //    if (personasArrary != null)
-            //    {
-            //        foreach (var item in personasArrary)
-            //        {
-            //            //(string)item["nombre"]                        
-            //        }
-            //    }
-            //}
+            CustomerModel cusModel = new CustomerModel();            
             cusModel.TipoCliente = (cuit.ToString().Length == 11) ? 2 : 1;
 
             //Buscando con Linq
